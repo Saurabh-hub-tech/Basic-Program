@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNGXMLTest Test Suite]" parallel="classes">
+  <parameter name="Paswd" value="demo123"/>
+  <parameter name="userId" value="admin"/>
+  <parameter name="url" value="http://demosite.center/wordpress/wp-login.php"/>
+  <test name="TestNGXMLTest Test(failed)" parallel="classes">
+    <parameter name="Paswd" value="demo123"/>
+    <parameter name="userId" value="admin"/>
+    <parameter name="url" value="http://demosite.center/wordpress/wp-login.php"/>
+    <classes>
+      <class name="com.test.LoginusingAnnotation">
+        <methods>
+          <include name="test4"/>
+          <include name="test3"/>
+          <include name="test2"/>
+          <include name="setUppp"/>
+          <include name="test1"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- com.test.LoginusingAnnotation -->
+    </classes>
+  </test> <!-- TestNGXMLTest Test(failed) -->
+</suite> <!-- Failed suite [TestNGXMLTest Test Suite] -->
